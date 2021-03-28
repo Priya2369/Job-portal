@@ -4,6 +4,8 @@ import BrowseTopCategories from '../Component/propComponents/BrowseTopCategories
 import Sdata from '../Component/propComponents/Sdata'
 import Testimonial from '../Component/propComponents/Testimonial'
 import TestimonialData from '../Component/arrya/TestimonialData'
+import TextField from '../Component/propComponents/TextField'
+import Login from '../Component/parentsComnents/Login'
 
 // function nbox(val){
 
@@ -24,14 +26,16 @@ export default function Home() {
 
         })}
       </div>
-      <div>
+      {/* <div>
         {TestimonialData.map((val) => {
           return (
             <Testimonial image={val.image} uName={val.uName} skill={val.skill} />
           );
         })}
 
-      </div>
+      </div> */}
+      <TextField/>
+      <Login/>
     </>
   )
 }

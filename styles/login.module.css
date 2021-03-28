@@ -1,0 +1,47 @@
+.mainDiv {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  .loginForm {
+    border: 1px solid black;
+    height: 350px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    align-content: center;
+  }
+  
+  
+  .btn{
+    padding-top: 20px;
+  }
+  .login{
+    height: 25px;
+    width: 255px;
+    color:white;
+    background-color:rgba(0,86,162);
+    border-radius: 4px;
+    border: 1px;
+    margin-bottom: 20px;
+    
+  }
+  .fpass{
+    text-align: center;
+  }
+  .newacc{
+    height: 25px;
+    width: 170px;
+    color:white;
+    background-color: rgba(240, 93, 35);
+    border-radius: 4px;
+    border: 1px;
+    align-items: center;
+  }
+  .cna{
+    text-align: center;
+  }
+  
