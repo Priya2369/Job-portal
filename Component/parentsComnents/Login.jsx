@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import{ React, useState} from 'react';
+import{ React, useState, useEffect} from 'react';
 import styles from '../../styles/login.module.css'
 import TextField from '../propComponents/TextField'
 
@@ -11,6 +11,7 @@ export default function Login() {
 
        function submit(e){
            e.preventDefault();
+           console.log(detail)
 
        }
 
@@ -28,20 +29,28 @@ export default function Login() {
     // }
 
 
-        const InputEvent = (e)=>{
-            const newdata = {...detail}
-            newdata[e.target.vName] = e.target.value
-            setDetail(newdata)
-            console.log(newdata)
+        // const InputEvent = (e)=>{
+        //     const newdata = {...detail}
+        //     newdata[e.target.vName] = e.target.value
+        //     setDetail(newdata)
+        //     console.log(newdata)
             
-        }
+        // }
+
+        useEffect(()=>{
+            
+        })
   return (
     <>
     <div className={styles.mainDiv}>
         <div className={styles.loginForm}>
-            <form onSubmit={(e)=>submit(e)}>
-                <TextField InputEvent={InputEvent} val={detail.email} vName="email"/>
-                <TextField InputEvent={InputEvent} val={detail.psw} vName="psw"/>
+            <form onSubmit={e =>submit(e)}>
+                <TextField InputEvent={e =>setDetail({email:e.target.value, psw:detail.psw})} val={detail.email} 
+                // vName="email"
+                />
+                <TextField InputEvent={e => setDetail({email:detail.email, psw:e.target.value})} val={detail.psw} 
+                // vName="psw"
+                />
                 <div className={styles.fpass}>
                     <a href="#">Forget password?</a><br/>
                 </div>
