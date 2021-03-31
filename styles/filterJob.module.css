@@ -1,0 +1,19 @@
+
+.first{
+    border:2px solid black;
+    width:25%;
+    height:770px;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    text-align:left;
+
+}
+.second{
+    border:1px solid black;
+    height: 660px;
+    margin-top:2rem;
+    margin-bottom: 2px;
+    padding-top:2px;
+    padding-left: 1px;
+    
+}

@@ -6,6 +6,9 @@ import Testimonial from '../Component/propComponents/Testimonial'
 import TestimonialData from '../Component/arrya/TestimonialData'
 import Login from '../Component/parentsComnents/Login' 
 import FeaturedJob from '../Component/parentsComnents/FeatureedJobParents'
+import FilterJob from '../Component/parentsComnents/FilterJob'
+import SignUp from '../Component/parentsComnents/SignUp'
+import Contact from '../Component/parentsComnents/Contact'
 
 // function nbox(val){
 
@@ -17,15 +20,15 @@ export default function Home() {
     <>
       <h1>MoSahay</h1>
       <h2>WE PUT PEOPLE BACK TO WORK</h2>
-      <h1>Browse Top categories</h1>
-      <div className={styles.cards}>
+      {/* <h1>Browse Top categories</h1> */}
+      {/* <div className={styles.cards}>
         {Sdata.map((val) => {
           return (
             <BrowseTopCategories image={val.image}
               sName={val.sName} />);
 
         })}
-      </div>
+      </div> */}
       {/* <div>
         {TestimonialData.map((val) => {
           return (
@@ -35,9 +38,14 @@ export default function Home() {
 
       </div> */}
 
-      <FeaturedJob/>
+      {/* <FeaturedJob/> */}
       
-      <Login/>
+      {/* <Login/> */}
+
+      {/* <FilterJob/>
+      <SignUp/> */}
+      <Contact/>
+
     </>
   )
 }
